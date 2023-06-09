@@ -29,7 +29,7 @@ const onWetherFormSubmit = event => {
     })
     .catch(err => {
       if (err.message === '404') {
-        alert('Такого міста не знайдено');
+        alert('No such city was found');
         weatherWrapperEl.innerHTML = '';
       }
     })
